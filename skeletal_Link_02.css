@@ -1,0 +1,206 @@
+/* ////////////////////////////////////////////////// */
+/* // START_PageBackground // */
+
+/* DefaultBodyInformation */
+body {
+	background-color: #272727;
+	color:            #ffffff;
+}
+
+/* // END_PageBackground // */
+/* ////////////////////////////////////////////////// */
+/* // START_CustomScrollBarSetup // */
+
+::-webkit-scrollbar {
+	width: 12px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(0, 0, 0, 0.4); 
+}
+
+/* // END_CustomScrollBarSetup // */
+/* ////////////////////////////////////////////////// */
+/* // START_DIVDefinitions // */
+
+/* PageShell */
+.BoundingBox {
+	display: block;
+	width:    100%;
+}
+/* OuterContainmentBox */
+.OuterContainmentBox {
+	display: block;
+	width:    100%;
+}
+/* InnerContainmentBox */
+.InnerContainmentBox {
+	display: block;
+	width:    100%;
+}
+/* NavBoxes */
+.NavBox_01 {
+	display: block;
+	clear:    left;
+	margin-bottom: 5px;
+	width:   75%;
+	height: 70px;
+	border-radius: 2px;
+	background-color: rgba(0, 0, 0, 0.445);
+	-webkit-transition: width 0.5s;
+	transition: width 0.5s;
+	position: relative;
+}
+.NavBox_01:hover {
+	width: 90%;
+	background-color: #ff6a00;
+}
+/* LinkBox */
+.blocknav {
+	position: absolute;
+	width:        100%;
+	height:       100%;
+	top:             0;
+	left:            0;
+	z-index:        10;
+}
+/* ContentBoxes */
+.ContentBox_01 {
+	display: block;
+	float:   right;
+	margin-bottom: 5px;
+	width:    90%;
+	height: 530px;
+	border-style: solid;
+	border-radius: 2px;
+	border-width:  4px;
+	border-color: rgb(255, 102, 0);
+	background-color: rgba(255, 255, 255, 0.308);
+	position: relative;
+}
+.ContentBox_02 {
+	display: block;
+	float:    left;
+	margin-bottom: 3px;
+	width:   100%;
+	height: 450px;
+	border-radius: 2px;
+	background-color: rgba(255, 255, 255, 0.308);
+	position: relative;
+	opacity: 0.7;
+}
+.FooterBox {
+	display: block;
+	float:   right;
+	margin-bottom: 5px;
+	width:  100%;
+	height: 33px;
+	border-radius: 2px;
+	background-color: #ff6a00;
+	position: relative;
+}
+
+/* // END_DIVDefinitions // */
+/* ////////////////////////////////////////////////// */
+/* // START_FontDefinitions // */
+
+/* NavBox */
+p {
+	text-align: center;
+	font-family: arial;
+	font-size:   1.1em;
+	color:   #d4d4d4;
+	margin:     0 auto;
+	padding-top:  26px;
+}
+/* Content */
+h1 {
+	text-align:    left;
+	font-family:  arial;
+	font-size:      1em;
+	color:    #d4d4d4;
+	margin:      0 auto;
+	padding-top:    8px;
+	padding-left:  30px;
+	padding-right: 30px;
+}
+
+/* // END_FontDefinitions // */
+/* ////////////////////////////////////////////////// */
+/* // START_MediaQueries // */
+
+/* 1stQuery_TabletDevice */
+@media only screen and (min-width:550px){
+	.NavBox_01 {
+		width: 50%;
+	}
+	.NavBox_01:hover {
+		width: 60%;
+	}
+	.ContentBox_01 {
+		margin-bottom: 5px;
+		padding-top:   8px;
+		padding-left:  5px;
+		padding-right: 5px;
+		width:         60%;
+	}
+}
+
+/* 2ndQuery_DesktopDevice */
+@media only screen and (min-width:1028px){
+	body {
+		background-color: #000000;
+	}
+	.BoundingBox {
+		margin:  auto;
+		height: 760px;
+		background-image: url('Resources/PageBackground_Monitor.png');
+		background-repeat: no-repeat;
+		background-position:  center;
+	}
+	.OuterContainmentBox {
+		padding-top: 46px;
+		margin:  auto;
+		width:  894px;
+		height: 671px;
+	}
+	.InnerContainmentBox {
+		height:   100%;
+		overflow: auto;
+	}
+	.NavBox_01 {
+		margin-bottom: 3px;
+		width: 50%;
+	}
+	.NavBox_01:hover {
+		width: 60%;
+	}
+	.ContentBox_01 {
+		margin-bottom: 3px;
+		width: 50%;
+	}
+	.FooterBox {
+		float:   left;
+		margin-bottom: 0px;
+	}
+	p {
+		font-size:  1.5em;
+		padding-top: 23px;
+	}
+	h1 {
+		text-align:   right;
+	}
+}
+
+/* // END_MediaQueries // */
+/* ////////////////////////////////////////////////// */
